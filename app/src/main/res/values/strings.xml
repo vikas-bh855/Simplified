@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Simplified</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="learn_title">Learn Languages</string>
+    <string name="build_title">Build Habit</string>
+    <string name="awards_title">Get Awards</string>
+    <string name="learn_languages">Learn Any Languages with fun mini-lessons\nthat feel like games! Use the free app\nevery day to quickly improve your\nspoken Languages.</string>
+    <string name="build_habit">Build an entertaining habit: learn as much or as little as you want. You only need 10 minutes a day to improve. Perfect for making your loo break a lot more fun.</string>
+    <string name="get_awards">It\'s fun! Advance by completing bite-sized lessons, and track your progress with shiny achievements.</string>
+</resources>
