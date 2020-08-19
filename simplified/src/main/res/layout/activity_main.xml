@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:layoutDescription="@xml/bottom_scene">
+
+        <View
+            android:id="@+id/background_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/selector_rounded"
+            app:layout_constraintBottom_toBottomOf="@id/ivHome"
+            app:layout_constraintEnd_toEndOf="@id/tvHome"
+            app:layout_constraintStart_toStartOf="@id/ivHome"
+            app:layout_constraintTop_toTopOf="@id/ivHome" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/ivHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingEnd="7dp"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ivHome"
+            app:layout_constraintEnd_toEndOf="@id/ivHome"
+            app:layout_constraintStart_toStartOf="@id/ivHome"
+            app:layout_constraintTop_toTopOf="@id/ivHome" />
+
+
+        <View
+            android:id="@+id/background_books"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/selector_rounded"
+            app:layout_constraintBottom_toBottomOf="@id/ivBooks"
+            app:layout_constraintEnd_toEndOf="@id/tvBooks"
+            app:layout_constraintStart_toStartOf="@id/ivBooks"
+            app:layout_constraintTop_toTopOf="@id/ivBooks" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/ivBooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:src="@drawable/book"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivHome" />
+
+        <TextView
+            android:id="@+id/tvBooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingEnd="7dp"
+            android:src="@drawable/book"
+            android:text="Books"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ivBooks"
+            app:layout_constraintEnd_toEndOf="@id/ivBooks"
+            app:layout_constraintStart_toStartOf="@id/ivBooks"
+            app:layout_constraintTop_toTopOf="@id/ivBooks" />
+
+        <View
+            android:id="@+id/background_music"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/selector_rounded"
+            app:layout_constraintBottom_toBottomOf="@id/ivMusic"
+            app:layout_constraintEnd_toEndOf="@id/tvMusic"
+            app:layout_constraintStart_toStartOf="@id/ivMusic"
+            app:layout_constraintTop_toTopOf="@id/ivMusic" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/ivMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:src="@drawable/music"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivDownload" />
+
+        <TextView
+            android:id="@+id/tvMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingEnd="7dp"
+            android:text="Songs"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ivMusic"
+            app:layout_constraintEnd_toEndOf="@id/ivMusic"
+            app:layout_constraintStart_toStartOf="@id/ivMusic"
+            app:layout_constraintTop_toTopOf="@id/ivMusic" />
+
+        <View
+            android:id="@+id/background_download"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/selector_rounded"
+            app:layout_constraintBottom_toBottomOf="@id/ivDownload"
+            app:layout_constraintEnd_toEndOf="@id/tvDownload"
+            app:layout_constraintStart_toStartOf="@id/ivDownload"
+            app:layout_constraintTop_toTopOf="@id/ivDownload" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/ivDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:src="@drawable/download"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingEnd="7dp"
+            android:text="Downloads"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ivDownload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivDownload" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>
