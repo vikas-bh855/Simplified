@@ -16,6 +16,9 @@ object Libs
     const val DOTINDICATOR ="com.tbuonomo.andrui:viewpagerdotsindicator"
     const val KOTLIN_STDLIB = "org.jetbrains.kotlin:kotlin-stdlib-jdk7"
     const val INK_PAGE_INDICATOR = "com.pacioianu.david:ink-page-indicator"
+    const val RETROFIT = "com.squareup.retrofit2:retrofit"
+    const val GSON = "com.squareup.retrofit2:converter-gson"
+    const val COIL = "io.coil-kt:coil"
 
 
     const val JUNIT = "junit:junit"

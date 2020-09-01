@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/rvMovies"
+            app:touchAnchorSide="bottom" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/ivMarvel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@id/rvMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/ivMarvel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@id/rvMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+
+    <Transition
+        app:constraintSetEnd="@id/fab_end"
+        app:constraintSetStart="@id/fab_start"
+        app:motionInterpolator="linear">
+        <OnClick app:targetId="@id/fab"/>
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/fab1" />
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/fab2" />
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/fab3" />
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/fab4" />
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/fab5" />
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/fab6" />
+        </KeyFrameSet>
+
+    </Transition>
+    <ConstraintSet android:id="@+id/fab_start">
+        <Constraint
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@id/reveal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:translationX="100dp"
+            android:translationY="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:rotation="-135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/fab2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:rotation="-135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/fab3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:rotation="-135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:rotation="-135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:rotation="-135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:rotation="-135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/fab_end">
+        <Constraint
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="45"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@id/reveal"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:translationX="100dp"
+            android:translationY="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="1"
+            android:rotation="0"
+            android:translationX="-80dp"
+            android:translationY="-80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/fab2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="1"
+            android:rotation="0"
+            android:translationX="-100dp"
+            android:translationY="-10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/fab3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:alpha="1"
+            android:rotation="0"
+            android:translationX="-10dp"
+            android:translationY="-100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:rotation="0"
+            android:translationX="-140dp"
+            android:translationY="-140dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:rotation="0"
+            android:translationX="-180dp"
+            android:translationY="-40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/fab6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:rotation="0"
+            android:translationX="-40dp"
+            android:translationY="-180dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </ConstraintSet>
+
+
+</MotionScene>

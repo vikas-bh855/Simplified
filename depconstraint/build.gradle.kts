@@ -26,7 +26,7 @@ val archTesting = "2.0.0"
 val arcore = "1.7.0"
 val benchmark = "1.0.0"
 val browser = "1.0.0"
-val constraintLayout = "2.0.0-beta6"
+val constraintLayout = "2.0.1"
 val core = "1.2.0"
 val coroutines = "1.3.4"
 val coroutinesTest = "1.3.4"
@@ -67,6 +67,8 @@ val runner = "1.2.0"
 val threetenabp = "1.0.5"
 val timber = "4.7.1"
 val viewpager2 = "1.0.0"
+val retrofit = "2.8.1"
+ val coil = "0.12.0"
 
 dependencies {
     constraints {
@@ -87,6 +89,9 @@ dependencies {
         api("${Libs.INK_PAGE_INDICATOR}:$pageIndicator")
         api("${Libs.ESPRESSO}:$espresso")
         api("${Libs.EXJUNIT}:$junitExt")
+        api("${Libs.RETROFIT}:$retrofit")
+        api("${Libs.GSON}:$retrofit")
+        api("${Libs.COIL}:$coil")
     }
 }
 

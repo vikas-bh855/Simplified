@@ -26,4 +26,5 @@ object Versions {
     const val CONSTRAINTLAYOUT = "1.1.3"
 
     const val pageIndicator = "1.3.0"
+    const val coil = "0.12.0"
 }
