@@ -19,6 +19,8 @@ object Libs
     const val RETROFIT = "com.squareup.retrofit2:retrofit"
     const val GSON = "com.squareup.retrofit2:converter-gson"
     const val COIL = "io.coil-kt:coil"
+    const val DYNAMICANIMATION = "androidx.dynamicanimation:dynamicanimation"
+    const val SAFEARG = "androidx.navigation:navigation-safe-args-gradle-plugin"
 
 
     const val JUNIT = "junit:junit"

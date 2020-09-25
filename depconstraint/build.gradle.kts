@@ -1,3 +1,5 @@
+import Versions.NAVIGATION
+
 /*
  * Copyright 2020 Google LLC
  *
@@ -21,12 +23,14 @@ plugins {
 
 val appcompat = "1.1.0"
 val activity = "1.0.0"
+
+
 val cardview = "1.0.0"
 val archTesting = "2.0.0"
 val arcore = "1.7.0"
 val benchmark = "1.0.0"
 val browser = "1.0.0"
-val constraintLayout = "2.0.1"
+val constraintLayout = "2.0.0-beta6"
 val core = "1.2.0"
 val coroutines = "1.3.4"
 val coroutinesTest = "1.3.4"
@@ -54,7 +58,7 @@ val junit = "4.13"
 val junitExt = "1.1.1"
 val lifecycle = "2.2.0"
 val lottie = "3.0.0"
-val material = "1.1.0"
+val material = "1.2.0"
 val mockito = "3.3.1"
 val mockitoKotlin = "1.5.0"
 val okhttp = "3.10.0"
@@ -68,7 +72,9 @@ val threetenabp = "1.0.5"
 val timber = "4.7.1"
 val viewpager2 = "1.0.0"
 val retrofit = "2.8.1"
- val coil = "0.12.0"
+val coil = "0.12.0"
+val dynamic = "1.0.0"
+val nav_version = "2.3.0"
 
 dependencies {
     constraints {
@@ -92,6 +98,7 @@ dependencies {
         api("${Libs.RETROFIT}:$retrofit")
         api("${Libs.GSON}:$retrofit")
         api("${Libs.COIL}:$coil")
+        api("${Libs.DYNAMICANIMATION}:${dynamic}")
     }
 }
 

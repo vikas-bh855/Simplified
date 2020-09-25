@@ -12,8 +12,8 @@ android {
         applicationId = "com.architecture.simplified"
         minSdkVersion(Versions.MIN_SDK)
         targetSdkVersion(Versions.TARGET_SDK)
-        versionCode = Versions.versionCodeMobile
-        versionName = Versions.versionName
+        versionCode = 1
+        versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -25,21 +25,7 @@ android {
                 "proguard-rules.pro"
             )
         }
-
     }
-    buildFeatures {
-        dataBinding = true
-    }
-
-
-    lintOptions {
-        // Eliminates UnusedResources false positives for resources used in DataBinding layouts
-        isCheckGeneratedSources = true
-        // Running lint over the debug variant is enough
-        isCheckReleaseBuilds = false
-        // See lint.xml for rules configuration
-    }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -48,10 +34,13 @@ android {
         val options = this as org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
         options.jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
-
     api(platform(project(":depconstraint")))
     kapt(platform(project(":depconstraint")))
 
@@ -66,16 +55,22 @@ dependencies {
     implementation(Libs.KOTLIN_STDLIB)
     implementation(Libs.LIFECYCLE_LIVE_DATA_KTX)
 
+    implementation(Libs.COIL)
+
     implementation(Libs.INK_PAGE_INDICATOR)
+    implementation(Libs.RETROFIT)
+    implementation(Libs.GSON)
     kapt(Libs.LIFECYCLE_COMPILER)
 
     implementation(Libs.HILT_ANDROID)
     implementation(Libs.HILT_VIEWMODEL)
+    implementation(Libs.DYNAMICANIMATION)
     kapt(Libs.HILT_COMPILER)
     kapt(Libs.ANDROIDX_HILT_COMPILER)
+
 
     testImplementation(Libs.JUNIT)
     androidTestImplementation(Libs.ESPRESSO)
     androidTestImplementation(Libs.EXJUNIT)
-//implementation="androidx.constraintlayout:constraintlayout:1.1.3"
+
 }

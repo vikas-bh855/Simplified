@@ -6,5 +6,7 @@ data class Results(
 )
 
 data class Movies(
-    val poster_path: String
+    val poster_path: String,
+    val overview: String,
+    val title: String
 )

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="result"
+            type="com.retrofit.movies.Results" />
+
+        <variable
+            name="viewModel"
+            type="com.retrofit.movies.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/motion_scene">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/ivMarvel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/marvel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMovies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="370dp"
+                android:orientation="vertical"
+                app:layoutManager="GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spanCount="3" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <View
+                android:id="@+id/reveal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_color"
+                android:translationX="100dp"
+                android:translationY="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/fab1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/mark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/fab2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/putin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/fab3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/crime"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/fab4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/adventure"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/fab5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tiger"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/fab6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/obama"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        <!--<androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motionLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layoutDescription="@xml/motion_scene2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

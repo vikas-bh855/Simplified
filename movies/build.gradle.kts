@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
+    id("androidx.navigation.safeargs.kotlin")
     id("dagger.hilt.android.plugin")
 }
 
@@ -64,6 +65,8 @@ dependencies {
 
     implementation(Libs.HILT_ANDROID)
     implementation(Libs.HILT_VIEWMODEL)
+    implementation(Libs.DYNAMICANIMATION)
+
     kapt(Libs.HILT_COMPILER)
     kapt(Libs.ANDROIDX_HILT_COMPILER)
 

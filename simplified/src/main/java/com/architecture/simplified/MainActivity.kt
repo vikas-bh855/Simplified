@@ -27,11 +27,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding =
             DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
-        binding.apply {
+      binding.apply {
             motionLayout.setTransition(motionLayout.currentState, R.id.end_home)
             motionLayout.transitionToEnd()
 
-            ivHome.setOnClickListener {
+           ivHome.setOnClickListener {
                 motionLayout.setTransition(motionLayout.currentState, R.id.end_home)
                 motionLayout.transitionToEnd()
             }

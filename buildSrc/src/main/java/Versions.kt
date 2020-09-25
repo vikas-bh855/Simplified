@@ -17,7 +17,7 @@ object Versions {
     const val versionCodeMobile = 1
     const val CORE = "1.3.0"
     const val APPCOMPAT = "1.1.0"
-    const val NAVIGATION = "2.2.2"
+    const val NAVIGATION = "2.3.0"
     val LIFECYCLE = "2.2.0"
     const val JUNIT = "4.13"
     const val EXJUNIT = "1.1.1"

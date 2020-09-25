@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movie">
+
+    <fragment
+        android:id="@+id/movie"
+        android:name="com.retrofit.movies.FragmentMovie"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie">
+
+        <argument
+            android:name="poster"
+            app:argType="string"/>
+        <argument
+            android:name="overview"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/actiom_to_sheet"
+            app:destination="@id/movieDetail" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/movieDetail"
+        android:name="com.retrofit.movies.FragmentMovieDetail"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail"/>
+
+</navigation>

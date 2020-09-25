@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                            
+                                                                                  
+
+                 
+                             
+                                                            
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/onboarding_activity_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/guide_actions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.architecture.simplified.ui.slideshow.InkPageIndicator
+            android:id="@+id/worm_dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="binding_1" 
+            app:ipi_dotDiameter="15dp"
+            app:ipi_currentPageIndicatorColor="#0343cb"
+            app:ipi_pageIndicatorColor="#AFC1E6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guide_actions" />
+
+        <Button
+            android:id="@+id/get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="binding_2"                       
+                                                   
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/worm_dots_indicator" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!--<Transition
+        motion:constraintSetEnd="@id/end_home"
+        motion:constraintSetStart="@id/base">
+        <OnClick motion:targetId="@id/ivHome"
+            motion:clickAction="toggle"/>
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@id/end_download"
+        motion:constraintSetStart="@id/base">
+        <OnClick motion:targetId="@id/ivDownload"
+            motion:clickAction="toggle"/>
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@id/end_book"
+        motion:constraintSetStart="@id/base">
+        <OnClick motion:targetId="@id/ivBooks"
+            motion:clickAction="toggle"/>
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@id/end_music"
+        motion:constraintSetStart="@id/base">
+        <OnClick motion:targetId="@id/ivMusic"
+            motion:clickAction="toggle"/>
+    </Transition>-->
     <ConstraintSet android:id="@+id/base">
         <Constraint
             android:id="@id/ivHome"
@@ -85,9 +110,9 @@
         motion:deriveConstraintsFrom="@id/base">
         <Constraint
             android:id="@id/ivBooks"
-            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toEndOf="@id/tvHome">
             <CustomAttribute
@@ -131,8 +156,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:alpha="1"
             android:layout_marginEnd="20dp"
+            android:alpha="1"
             android:visibility="visible"
             motion:layout_constraintBottom_toBottomOf="@id/ivMusic"
             motion:layout_constraintEnd_toStartOf="@id/ivDownload"

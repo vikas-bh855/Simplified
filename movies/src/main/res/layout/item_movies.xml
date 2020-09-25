@@ -7,6 +7,10 @@
         <variable
             name="movies"
             type="com.retrofit.movies.Movies" />
+
+        <variable
+            name="listener"
+            type="com.retrofit.movies.MoviesAdapter.MovieListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,8 +29,10 @@
 
             <ImageView
                 android:id="@+id/ivPoster"
+                android:onClick="@{(view)->listener.movieClicked(movies,view)}"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:transitionName="@{@string/movie_detail_transition_name(movies.poster_path)}"
                 app:setImageUrl="@{movies.poster_path}" />
 
         </androidx.cardview.widget.CardView>

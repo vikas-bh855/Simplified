@@ -23,15 +23,17 @@ class ViewPagerPager(private val viewPager: ViewPager2, val viewModel: OnBoardin
             var dragProgress = 0
             var draggedPages = 0
             addListener(
-                onStart = { viewPager.beginFakeDrag() },
+                onStart = { viewPager.beginFakeDrag()},
                 onEnd = { viewPager.endFakeDrag() }
             )
             addUpdateListener {
+
                 if (!viewPager.isFakeDragging) {
                     // Sometimes onAnimationUpdate is called with initial value before
                     // onAnimationStart is called.
                     return@addUpdateListener
                 }
+
 
                 val dragPoint = (animatedValue as Int)
                 val dragBy = dragPoint - dragProgress
@@ -55,6 +57,8 @@ class ViewPagerPager(private val viewPager: ViewPager2, val viewModel: OnBoardin
             duration = if (pages == 1) PAGE_CHANGE_DURATION else MULTI_PAGE_CHANGE_DURATION
             interpolator = fastOutSlowIn
         }.start()
+
+
     }
 
     companion object {

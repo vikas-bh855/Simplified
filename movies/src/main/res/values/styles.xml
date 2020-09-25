@@ -1,15 +1,23 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:windowBackground">@color/colorPrimary</item><!-- change navigation bar color -->
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <!-- change status bar color -->
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorText">@color/orange</item>
 
+    </style>
+
+    <style name="ShapeAppearance.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@color/orange</item>
     </style>
 
 </resources>
