@@ -7,13 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.transition.MaterialContainerTransform
-import com.google.android.material.transition.MaterialElevationScale
 import com.google.android.material.transition.MaterialFadeThrough
-import com.google.android.material.transition.MaterialSharedAxis
 import com.retrofit.movies.databinding.FragmentMovieBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,7 +16,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class FragmentMovie : Fragment(), MoviesAdapter.MovieListener {
     private val viewModel: MainViewModel by viewModels()
-    lateinit var bindings: FragmentMovieBinding
+    private lateinit var bindings: FragmentMovieBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

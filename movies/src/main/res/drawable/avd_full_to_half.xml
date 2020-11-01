@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/star_half">
+
+    <target
+        android:name="@string/comment_lines"
+        android:animation="@animator/star_full_to_half" />
+
+</animated-vector>

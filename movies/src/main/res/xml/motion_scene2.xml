@@ -10,14 +10,21 @@
         <KeyFrameSet>
 
             <KeyAttribute
-                android:rotation="50"
-                app:framePosition="50"
-                app:motionTarget="@+id/ivPoster" />
-            <KeyAttribute
                 android:translationZ="0dp"
-                app:framePosition="30"
+                app:framePosition="5"
                 app:motionTarget="@+id/ivPoster" />
-
+            <KeyPosition
+                app:motionTarget="@+id/ivPoster1"
+                app:framePosition="50"
+                app:keyPositionType="deltaRelative"
+                app:percentX="-0.713"
+                app:percentY="0.803" />
+            <KeyPosition
+                app:motionTarget="@+id/ivPoster2"
+                app:framePosition="40"
+                app:keyPositionType="deltaRelative"
+                app:percentX="0.082"
+                app:percentY="0.828" />
         </KeyFrameSet>
     </Transition>
 
@@ -34,17 +41,29 @@
 
     <ConstraintSet android:id="@+id/base">
         <Constraint
-            android:id="@id/rvMoviesDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@id/ivPoster1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@id/ivPoster2"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@id/ivPoster3"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent" />
 
         <Constraint
             android:id="@id/ivPoster"
             android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:translationZ="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,20 +79,38 @@
             android:id="@id/tvOverview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/ivPoster"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivPoster" />
 
     </ConstraintSet>
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@id/rvMoviesDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@id/ivPoster1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:translationZ="1dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@id/ivPoster2"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:translationZ="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@id/ivPoster3"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="40dp"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
             android:id="@id/ivPoster"
@@ -81,16 +118,18 @@
             android:layout_height="200dp"
             android:translationZ="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivPoster1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
             android:id="@id/tvOverview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/ivPoster"
             app:layout_constraintTop_toBottomOf="@id/ivPoster" />
+
 
     </ConstraintSet>
 
@@ -98,28 +137,62 @@
     <ConstraintSet android:id="@+id/slide_end">
         <Constraint
             android:id="@id/ivPoster"
-            android:layout_width="113dp"
-            android:layout_height="150dp"
+            android:layout_width="225dp"
+            android:layout_height="300dp"
             android:translationZ="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
             android:id="@id/tvTitle"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/ivPoster"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/ivPoster" />
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/ivPoster"
+            app:layout_constraintTop_toBottomOf="@id/ivPoster" />
 
         <Constraint
             android:id="@id/tvOverview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/ivPoster"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <Constraint
+            android:id="@id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/tvTitle"
+            app:layout_constraintTop_toTopOf="@id/tvTitle"
             app:layout_constraintTop_toBottomOf="@id/ivPoster" />
+
+
+        <Constraint
+            android:id="@id/ivPoster1"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivPoster2"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@id/ivPoster2"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivPoster3"
+            app:layout_constraintStart_toEndOf="@id/ivPoster1" />
+        <Constraint
+            android:id="@id/ivPoster3"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </ConstraintSet>
 
 </MotionScene>

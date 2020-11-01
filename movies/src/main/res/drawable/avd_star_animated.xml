@@ -1,0 +1,22 @@
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/star_full"
+        android:drawable="@drawable/star_rating"
+        android:state_activated="false" />
+
+    <item
+        android:id="@+id/star_half"
+        android:drawable="@drawable/star_half"
+        android:state_activated="true" />
+
+    <transition
+        android:drawable="@drawable/avd_half_to_full"
+        android:fromId="@id/star_half"
+        android:toId="@id/star_full" />
+
+    <transition
+        android:drawable="@drawable/avd_full_to_half"
+        android:fromId="@id/star_full"
+        android:toId="@id/star_half" />
+
+</animated-selector>

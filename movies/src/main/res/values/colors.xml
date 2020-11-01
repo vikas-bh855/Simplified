@@ -5,5 +5,9 @@
     <color name="grey_bg">#181818</color>
     <color name="orange">#FF5733</color>
     <color name="white">#ffffff</color>
+    <color name="pink">#E4686E</color>
+    <color name="purple">#371F7E</color>
+    <color name="sky_blue">#07B7CD</color>
+    <color name="light_pink">#E3BFB0</color>
 
 </resources>

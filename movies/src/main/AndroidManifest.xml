@@ -20,9 +20,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity">
+        <activity android:name=".TransitionActivity">
 
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
