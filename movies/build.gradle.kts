@@ -5,6 +5,7 @@ plugins {
     kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
     id("dagger.hilt.android.plugin")
+    kotlin("plugin.serialization") version "1.4.10"
 }
 
 android {
@@ -20,7 +21,13 @@ android {
 
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        getByName("debug")
+        {
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -61,6 +68,7 @@ dependencies {
     implementation(Libs.INK_PAGE_INDICATOR)
     implementation(Libs.RETROFIT)
     implementation(Libs.GSON)
+    implementation(Libs.KOTLIN_SERIALIZATION)
     kapt(Libs.LIFECYCLE_COMPILER)
 
     implementation(Libs.HILT_ANDROID)

@@ -1,5 +1,3 @@
-import Versions.NAVIGATION
-
 /*
  * Copyright 2020 Google LLC
  *
@@ -99,6 +97,7 @@ dependencies {
         api("${Libs.GSON}:$retrofit")
         api("${Libs.COIL}:$coil")
         api("${Libs.DYNAMICANIMATION}:${dynamic}")
+        api("${Libs.KOTLIN_SERIALIZATION}:${Versions.KOTLIN_SERIALIZATION}")
     }
 }
 

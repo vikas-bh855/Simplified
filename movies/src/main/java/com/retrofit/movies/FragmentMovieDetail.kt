@@ -15,22 +15,28 @@ import com.google.android.material.transition.MaterialFadeThrough
 import com.retrofit.movies.databinding.FragmentMovieDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
 import coil.load
+import kotlinx.coroutines.*
 
 
 @AndroidEntryPoint
 class FragmentMovieDetail : Fragment() {
     private val viewModel: MainViewModel by viewModels()
     lateinit var bindings: FragmentMovieDetailBinding
-    private val args: FragmentMovieArgs by navArgs()
+    private val args: FragmentMovieDetailArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+runBlocking {
+    CoroutineScope(Dispatchers.IO).launch {
+        print("This coroutine is launched in coroutine scope")
+    }
+}
         enterTransition = MaterialFadeThrough()
         bindings = FragmentMovieDetailBinding.inflate(inflater, container, false).apply {
-            ivPoster.setOnApplyWindowInsetsListener { v, insets ->
+            ivPoster.setOnApplyWindowInsetsListener { _, insets ->
                 ivPoster.updatePadding(top = insets.systemWindowInsetTop)
                 insets
             }

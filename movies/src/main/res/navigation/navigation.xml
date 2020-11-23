@@ -10,16 +10,6 @@
         android:name="com.retrofit.movies.FragmentMovie"
         android:label="fragment_movie"
         tools:layout="@layout/fragment_movie">
-
-        <argument
-            android:name="poster"
-            app:argType="string"/>
-        <argument
-            android:name="overview"
-            app:argType="string" />
-        <argument
-            android:name="title"
-            app:argType="string" />
         <action
             android:id="@+id/actiom_to_sheet"
             app:destination="@id/movieDetail" />
@@ -30,6 +20,16 @@
         android:id="@+id/movieDetail"
         android:name="com.retrofit.movies.FragmentMovieDetail"
         android:label="fragment_movie_detail"
-        tools:layout="@layout/fragment_movie_detail"/>
+        tools:layout="@layout/fragment_movie_detail">
+        <argument
+            android:name="poster"
+            app:argType="string" />
+        <argument
+            android:name="overview"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
 
 </navigation>

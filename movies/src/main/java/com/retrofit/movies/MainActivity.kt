@@ -7,12 +7,9 @@ import com.retrofit.movies.databinding.MainActivityBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
-
-
+class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         DataBindingUtil.setContentView<MainActivityBinding>(this, R.layout.main_activity)
     }
-
 }

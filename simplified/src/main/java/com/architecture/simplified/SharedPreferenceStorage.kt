@@ -5,6 +5,8 @@ import android.content.SharedPreferences
 import androidx.annotation.WorkerThread
 import androidx.core.content.edit
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.android.scopes.ActivityRetainedScoped
+import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Inject
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
@@ -15,6 +17,7 @@ interface PreferenceStorage {
 }
 
 
+@ActivityRetainedScoped
 class SharedPreferenceStorage @Inject constructor(@ApplicationContext context: Context):PreferenceStorage {
     private val prefs: Lazy<SharedPreferences> = lazy {
         // Lazy to prevent IO access to main thread.

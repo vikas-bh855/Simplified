@@ -12,7 +12,6 @@ import com.google.android.material.transition.MaterialFadeThrough
 import com.retrofit.movies.databinding.FragmentMovieBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class FragmentMovie : Fragment(), MoviesAdapter.MovieListener {
     private val viewModel: MainViewModel by viewModels()
@@ -25,6 +24,7 @@ class FragmentMovie : Fragment(), MoviesAdapter.MovieListener {
         bindings = FragmentMovieBinding.inflate(inflater, container, false)
         return bindings.root
     }
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -47,6 +47,8 @@ class FragmentMovie : Fragment(), MoviesAdapter.MovieListener {
         exitTransition = MaterialElevationScale(false).apply { duration = 300 }
         reenterTransition =  MaterialElevationScale(true).apply { duration = 300 }*/
         exitTransition = MaterialFadeThrough()
-        findNavController().navigate(MovieDirections(movie))
+        findNavController().navigate(
+            FragmentMovieDirections.actiomToSheet(movie.poster_path,movie.overview, movie.title)
+        )
     }
 }
