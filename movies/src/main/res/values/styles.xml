@@ -20,4 +20,9 @@
         <item name="backgroundTint">@color/orange</item>
     </style>
 
+    <style name="SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressDrawable">@drawable/progress_drawable</item>
+        <item name="android:thumbTint">@color/cherry_red</item>
+    </style>
+
 </resources>

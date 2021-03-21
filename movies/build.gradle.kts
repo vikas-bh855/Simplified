@@ -79,8 +79,8 @@ dependencies {
     kapt(Libs.ANDROIDX_HILT_COMPILER)
 
 
-    testImplementation(Libs.JUNIT)
-    androidTestImplementation(Libs.ESPRESSO)
-    androidTestImplementation(Libs.EXJUNIT)
+    implementation(Libs.EXO_PLAYER)
+
+
 
 }

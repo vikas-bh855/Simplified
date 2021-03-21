@@ -93,7 +93,7 @@
                 android:id="@+id/fab4"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/adventure"
+                android:src="@drawable/adventure_movie"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 

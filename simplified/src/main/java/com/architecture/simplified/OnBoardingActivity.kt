@@ -46,7 +46,7 @@ class OnBoardingActivity : AppCompatActivity() {
             else
                 pagerPager.advance()
         })
-        viewModel.buttonText.observe(this, Observer { binding.buttonText = ButtonText(it) })
+        viewModel.buttonText.observe(this, { binding.buttonText = ButtonText(it) })
 
     }
 }

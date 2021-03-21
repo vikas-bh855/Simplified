@@ -36,6 +36,15 @@
         </KeyFrameSet>
 
     </Transition>
+
+   <!-- <Transition
+        app:constraintSetEnd="@id/slide_end"
+        app:constraintSetStart="@id/slide_start">
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/rvMovies"
+            app:touchRegionId="@id/rvMovies" />
+    </Transition>-->
     <ConstraintSet android:id="@+id/fab_start">
 
         <Constraint
@@ -47,10 +56,10 @@
 
         <Constraint
             android:id="@id/reveal"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:translationX="100dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:translationY="100dp"
+            android:translationX="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -128,7 +137,6 @@
             android:translationY="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
         <Constraint
             android:id="@+id/fab1"
             android:layout_width="60dp"
@@ -191,6 +199,31 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     </ConstraintSet>
+
+
+ <!--   <ConstraintSet android:id="@+id/slide_start">
+
+        <Constraint
+            android:id="@id/rvMovies"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/slide_end">
+        <Constraint
+            android:id="@id/rvMovies"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>-->
 
 
 </MotionScene>

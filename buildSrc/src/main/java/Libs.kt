@@ -22,6 +22,7 @@ object Libs
     const val COIL = "io.coil-kt:coil"
     const val DYNAMICANIMATION = "androidx.dynamicanimation:dynamicanimation"
     const val SAFEARG = "androidx.navigation:navigation-safe-args-gradle-plugin"
+    const val EXO_PLAYER = "com.google.android.exoplayer:exoplayer"
 
 
     const val JUNIT = "junit:junit"

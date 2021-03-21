@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        app:layoutDescription="@xml/motion_rotate"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircleAngle="0"
+            android:src="@drawable/crime"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/second"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/adventure_movie"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/third"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/tiger"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="150dp" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

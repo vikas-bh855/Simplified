@@ -28,7 +28,7 @@ val archTesting = "2.0.0"
 val arcore = "1.7.0"
 val benchmark = "1.0.0"
 val browser = "1.0.0"
-val constraintLayout = "2.0.0-beta6"
+val constraintLayout = "2.1.0-beta01"
 val core = "1.2.0"
 val coroutines = "1.3.4"
 val coroutinesTest = "1.3.4"
@@ -73,6 +73,8 @@ val retrofit = "2.8.1"
 val coil = "0.12.0"
 val dynamic = "1.0.0"
 val nav_version = "2.3.0"
+ val ESPRESSO = "3.3.0"
+ val EXO_PLAYER = "2.12.0"
 
 dependencies {
     constraints {
@@ -91,13 +93,14 @@ dependencies {
         api("${Libs.NAVIGATION_FRAGMENT_KTX}:${Versions.NAVIGATION}")
         api("${Libs.NAVIGATION_UI_KTX}:${Versions.NAVIGATION}")
         api("${Libs.INK_PAGE_INDICATOR}:$pageIndicator")
-        api("${Libs.ESPRESSO}:$espresso")
+        api("${Libs.ESPRESSO}:$ESPRESSO")
         api("${Libs.EXJUNIT}:$junitExt")
         api("${Libs.RETROFIT}:$retrofit")
         api("${Libs.GSON}:$retrofit")
         api("${Libs.COIL}:$coil")
         api("${Libs.DYNAMICANIMATION}:${dynamic}")
         api("${Libs.KOTLIN_SERIALIZATION}:${Versions.KOTLIN_SERIALIZATION}")
+        api("${Libs.EXO_PLAYER}:${EXO_PLAYER}")
     }
 }
 

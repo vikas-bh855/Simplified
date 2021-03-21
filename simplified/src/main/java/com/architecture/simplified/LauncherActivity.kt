@@ -20,7 +20,7 @@ class LauncherActivity : AppCompatActivity() {
         val viewModel: LaunchViewModel by viewModels()
         viewModel.launchDestination.observe(this, Observer { destination ->
             when (destination) {
-                MAIN_ACTIVITY -> startActivity(Intent(this, MainActivity::class.java))
+                MAIN_ACTIVITY -> startActivity(Intent(this, PagerActivity::class.java))
                 ONBOARDING -> startActivity(Intent(this, OnBoardingActivity::class.java))
             }
             finish()

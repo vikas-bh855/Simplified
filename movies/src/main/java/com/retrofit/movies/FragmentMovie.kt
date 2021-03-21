@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.transition.MaterialFadeThrough
+import com.google.android.material.transition.MaterialElevationScale
 import com.retrofit.movies.databinding.FragmentMovieBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,11 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class FragmentMovie : Fragment(), MoviesAdapter.MovieListener {
     private val viewModel: MainViewModel by viewModels()
     private lateinit var bindings: FragmentMovieBinding
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         bindings = FragmentMovieBinding.inflate(inflater, container, false)
         return bindings.root
     }
@@ -43,12 +40,11 @@ class FragmentMovie : Fragment(), MoviesAdapter.MovieListener {
     }
 
     override fun movieClicked(movie: Movies, view: View) {
-        /*val extras = FragmentNavigatorExtras(view to getString(R.string.movie_detail_transition_name))
+         val extras = FragmentNavigatorExtras(view to getString(R.string.movie_detail_transition_name))
         exitTransition = MaterialElevationScale(false).apply { duration = 300 }
-        reenterTransition =  MaterialElevationScale(true).apply { duration = 300 }*/
-        exitTransition = MaterialFadeThrough()
-        findNavController().navigate(
-            FragmentMovieDirections.actiomToSheet(movie.poster_path,movie.overview, movie.title)
-        )
+          reenterTransition =  MaterialElevationScale(true).apply { duration = 300 }
+        /*exitTransition = MaterialFade()
+        startActivity(Intent(requireActivity(), PlayerActivity::class.java))*/
+        findNavController().navigate(FragmentMovieDirections.actiomToSheet(movie.poster_path, movie.overview, movie.title))
     }
 }

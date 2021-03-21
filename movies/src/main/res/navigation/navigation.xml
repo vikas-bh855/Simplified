@@ -30,6 +30,15 @@
         <argument
             android:name="title"
             app:argType="string" />
+        <action
+            android:id="@+id/action_movieDetail_to_fragmentRotate"
+            app:destination="@id/fragmentRotate" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentRotate"
+        android:name="com.retrofit.movies.FragmentRotate"
+        android:label="FragmentRotate"
+        tools:layout="@layout/fragment_rotate" />
+
 
 </navigation>

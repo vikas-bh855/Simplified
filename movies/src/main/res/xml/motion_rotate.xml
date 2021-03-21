@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        app:constraintSetEnd="@id/rotate_2"
+        app:constraintSetStart="@+id/rotate_1">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:touchAnchorSide="middle" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/rotate_3"
+        app:constraintSetStart="@+id/rotate_2">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:touchAnchorSide="middle" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/rotate_4"
+        app:constraintSetStart="@+id/rotate_3">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:touchAnchorSide="middle" />
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/rotate_5"
+        app:constraintSetStart="@+id/rotate_4">
+        <OnSwipe
+            app:dragDirection="dragLeft"
+            app:touchAnchorSide="middle" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/rotate_1">
+        <Constraint
+            android:id="@id/first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/second"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/third"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="150dp" />
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/rotate_2">
+
+        <Constraint
+            android:id="@id/first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/second"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/third"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="150dp" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/rotate_3">
+
+        <Constraint
+            android:id="@id/first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/second"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/third"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="240"
+            app:layout_constraintCircleRadius="150dp" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/rotate_4">
+
+        <Constraint
+            android:id="@id/first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/second"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="240"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/third"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="300"
+            app:layout_constraintCircleRadius="150dp" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/rotate_5">
+
+        <Constraint
+            android:id="@id/first"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="240"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/second"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="300"
+            app:layout_constraintCircleRadius="150dp" />
+
+        <Constraint
+            android:id="@id/third"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintCircle="@id/center"
+            app:layout_constraintCircleAngle="360"
+            app:layout_constraintCircleRadius="150dp" />
+        <Constraint
+            android:id="@+id/center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:transitionEasing="cubic(0.93,0,1,0)"
+            app:pathMotionArc="flip"
+            android:rotationX="142"
+            android:rotationY="203"
+            android:rotation="95" />
+        <Constraint
+            android:id="@+id/center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:transitionEasing="cubic(0.44,0.31,0.8,0.8)" />
+        <Constraint
+            android:id="@+id/center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:transitionEasing="cubic(0.55,0.26,0.8,0.8)" />
+        <Constraint
+            android:id="@+id/center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:transitionEasing="cubic(0.2,0,0.8,0.8)" />
+
+    </ConstraintSet>
+
+</MotionScene>

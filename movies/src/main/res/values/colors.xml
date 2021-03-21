@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#000000</color>
+    <color name="black85">#40000000</color>
     <color name="colorPrimary">#101010</color>
     <color name="grey_bg">#181818</color>
     <color name="orange">#FF5733</color>
@@ -9,5 +10,8 @@
     <color name="purple">#371F7E</color>
     <color name="sky_blue">#07B7CD</color>
     <color name="light_pink">#E3BFB0</color>
+    <color name="off_white">#CDD0C5</color>
+    <color name="transparent">#00000000</color>
+    <color name="cherry_red">#e30a24</color>e
 
 </resources>

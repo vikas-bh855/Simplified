@@ -7,4 +7,5 @@
     <color name="dim_black">#5E6D88</color>
     <color name="dark_black">#303B4F</color>
     <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
 </resources>

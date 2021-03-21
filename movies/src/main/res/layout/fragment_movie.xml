@@ -38,6 +38,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvMovies"
                 android:layout_width="0dp"
@@ -64,11 +65,11 @@
 
             <View
                 android:id="@+id/reveal"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/rounded_color"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
                 android:translationX="100dp"
                 android:translationY="100dp"
+                android:background="@drawable/rounded_color"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -77,6 +78,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/mark"
+                android:alpha="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -85,6 +87,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/putin"
+                android:alpha="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -93,6 +96,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/crime"
+                android:alpha="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -101,6 +105,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/adventure"
+                android:alpha="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -109,6 +114,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/tiger"
+                android:alpha="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -117,6 +123,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/obama"
+                android:alpha="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.motion.widget.MotionLayout>

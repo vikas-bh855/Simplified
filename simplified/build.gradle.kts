@@ -73,4 +73,6 @@ dependencies {
     androidTestImplementation(Libs.ESPRESSO)
     androidTestImplementation(Libs.EXJUNIT)
 
+    implementation(Libs.EXO_PLAYER)
+
 }
