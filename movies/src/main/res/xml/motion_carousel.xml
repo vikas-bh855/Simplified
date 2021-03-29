@@ -3,53 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        app:duration="100"
         app:constraintSetEnd="@id/next"
         app:constraintSetStart="@id/start">
-        <OnSwipe app:dragDirection="dragLeft"
-            app:dragScale="2" />
+        <OnSwipe app:dragDirection="dragLeft" />
     </Transition>
 
     <Transition
-        app:duration="100"
         app:constraintSetEnd="@id/previous"
         app:constraintSetStart="@id/start">
-        <OnSwipe app:dragDirection="dragRight"
-            app:dragScale="2"/>
+        <OnSwipe app:dragDirection="dragRight" />
     </Transition>
 
     <Transition
-        app:duration="100"
         app:constraintSetEnd="@id/prev"
         app:constraintSetStart="@id/previous">
-        <OnSwipe app:dragDirection="dragRight"
-            app:dragScale="2"/>
+        <OnSwipe app:dragDirection="dragRight" />
     </Transition>
 
     <Transition
-        app:duration="100"
         app:constraintSetEnd="@id/end"
         app:constraintSetStart="@id/next">
-        <OnSwipe app:dragDirection="dragLeft"
-            app:dragScale="2"/>
+        <OnSwipe app:dragDirection="dragLeft" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
 
         <Constraint
             android:id="@+id/iv3"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="50dp" />
 
         <Constraint
             android:id="@+id/iv4"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+             android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="25dp" />
@@ -63,18 +59,22 @@
 
         <Constraint
             android:id="@+id/iv6"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+             android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="25dp" />
 
         <Constraint
             android:id="@+id/iv7"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="50dp" />
@@ -86,27 +86,33 @@
 
         <Constraint
             android:id="@+id/iv3"
-            android:layout_width="75dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="2dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="75dp" />
 
         <Constraint
             android:id="@+id/iv4"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="50dp" />
 
         <Constraint
             android:id="@+id/iv5"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="6dp"
+             android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="25dp" />
@@ -120,9 +126,11 @@
 
         <Constraint
             android:id="@+id/iv7"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="6dp"
+             android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="25dp"
             app:layout_constraintCircle="@id/center" />
@@ -134,36 +142,44 @@
 
         <Constraint
             android:id="@+id/iv3"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="2dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="100dp" />
 
         <Constraint
             android:id="@+id/iv4"
-            android:layout_width="75dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="75dp" />
 
         <Constraint
             android:id="@+id/iv5"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="6dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="50dp" />
 
         <Constraint
             android:id="@+id/iv6"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="8dp"
+             android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="25dp"
             app:layout_constraintCircle="@id/center" />
@@ -183,9 +199,11 @@
 
         <Constraint
             android:id="@+id/iv3"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="270"
             app:layout_constraintCircleRadius="25dp" />
@@ -199,27 +217,33 @@
 
         <Constraint
             android:id="@+id/iv5"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="6dp"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="25dp" />
 
         <Constraint
             android:id="@+id/iv6"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="50dp" />
 
         <Constraint
             android:id="@+id/iv7"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="2dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="75dp" />
@@ -238,36 +262,44 @@
 
         <Constraint
             android:id="@+id/iv4"
-            android:layout_width="125dp"
-            android:layout_height="175dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="8dp"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="25dp"
             app:layout_constraintCircle="@id/center" />
 
         <Constraint
             android:id="@+id/iv5"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="6dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="50dp" />
 
         <Constraint
             android:id="@+id/iv6"
-            android:layout_width="75dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="4dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="75dp" />
 
         <Constraint
             android:id="@+id/iv7"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+             android:layout_width="150dp"
+            android:layout_height="200dp"
             android:elevation="2dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
             app:layout_constraintCircle="@id/center"
             app:layout_constraintCircleAngle="90"
             app:layout_constraintCircleRadius="100dp" />
