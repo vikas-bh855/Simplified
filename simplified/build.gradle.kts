@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Versions.COMPILE_SDK)
+    compileSdk = Versions.COMPILE_SDK
     defaultConfig {
         applicationId = "com.architecture.simplified"
-        minSdkVersion(Versions.MIN_SDK)
-        targetSdkVersion(Versions.TARGET_SDK)
+        minSdk = Versions.MIN_SDK
+        targetSdk = Versions.TARGET_SDK
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -72,7 +72,5 @@ dependencies {
     testImplementation(Libs.JUNIT)
     androidTestImplementation(Libs.ESPRESSO)
     androidTestImplementation(Libs.EXJUNIT)
-
-    implementation(Libs.EXO_PLAYER)
 
 }
