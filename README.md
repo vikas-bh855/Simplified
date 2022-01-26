@@ -1,13 +1,13 @@
 # Simplified
 Movie app using DataBinding, MotionLayout, LiveData, ViewModel, Hilt, and Coroutines
 
-![](fab_button.gif)
-![](transition.gif)
-![](carousel.gif)
+![]<img src="fab_button.gif" width="360" height="700">
+![]<img src="transition.gif" width="360" height="660">
+![]<img src="carousel.gif" width="360" height="700">
 
 OnBoarding Page using ViewPager2, DataBinding LiveData, ViewModel and Coroutines
 
-![](bottom_bar.gif)
+![]<img src="bottom_bar.gif" width="360" height="700">
 
 
 
